@@ -1,0 +1,26 @@
+# Python dependencies, grouped by what needs them. Python 3.10 or newer.
+# Minimum versions are ones this code has run against (Linux Python 3.10; Windows Python 3.12 and 3.13).
+#
+#   pip install -r requirements.txt
+
+# Core: codebook_schema.py, coding/, finetuning/ data preparation and scoring, comparison/, analysis/
+pandas>=2.0
+numpy>=1.24
+openpyxl>=3.1            # coding workbooks and the development-review export
+pytest>=8.0              # the tests: python -m pytest coding finetuning comparison
+
+# Corpus extraction (extraction/). Only needed to rebuild the corpus, which is frozen.
+python-docx>=1.1         # .docx submissions
+docx2txt                 # .docx submissions, second route
+beautifulsoup4>=4.12     # MHTML and HTML captures
+requests>=2.31           # shared chat links
+PyPDF2>=3.0              # PDF submissions (extraction/pdf_extractor.py)
+anthropic                # LLM-assisted segmentation (extraction/segment_needs_review.py); needs ANTHROPIC_API_KEY
+# Optional routes, probed at start-up; a missing one narrows extraction rather than stopping it:
+# playwright>=1.40       # headless fetch of shared chat links; then: python -m playwright install chromium
+# pytesseract>=0.3.10    # OCR of image-only submissions; needs the tesseract program on PATH
+# Pillow>=10.0
+# striprtf>=0.0.26       # .rtf submissions
+
+# Not installed from here:
+# - training C1: requirements-train.txt (the exact versions of the reported runs).

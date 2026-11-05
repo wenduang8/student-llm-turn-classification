@@ -1,0 +1,421 @@
+diff --git a/finetuning/__pycache__/data.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/data.cpython-312.pyc
+index 58f87b1..21a86f9 100644
+Binary files a/finetuning/__pycache__/data.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/data.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/evaluation.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/evaluation.cpython-312.pyc
+index a626fdf..219cadb 100644
+Binary files a/finetuning/__pycache__/evaluation.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/evaluation.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/grouped_split.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/grouped_split.cpython-312.pyc
+index 070bd7a..b1333d6 100644
+Binary files a/finetuning/__pycache__/grouped_split.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/grouped_split.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/labels.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/labels.cpython-312.pyc
+index 0b7ad49..8caf07f 100644
+Binary files a/finetuning/__pycache__/labels.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/labels.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/model_inputs.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/model_inputs.cpython-312.pyc
+index 4ba260d..2cd7ef1 100644
+Binary files a/finetuning/__pycache__/model_inputs.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/model_inputs.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/multihead.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/multihead.cpython-312.pyc
+index 1930800..5b4c163 100644
+Binary files a/finetuning/__pycache__/multihead.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/multihead.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/prepare_data.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/prepare_data.cpython-312.pyc
+index b05c8c9..05283c8 100644
+Binary files a/finetuning/__pycache__/prepare_data.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/prepare_data.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/student_bootstrap.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/student_bootstrap.cpython-312.pyc
+index a23b4a8..e9834d2 100644
+Binary files a/finetuning/__pycache__/student_bootstrap.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/student_bootstrap.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/test_labels.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/test_labels.cpython-312.pyc
+index 303c75c..908a797 100644
+Binary files a/finetuning/__pycache__/test_labels.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/test_labels.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/test_prepare_data.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/test_prepare_data.cpython-312.pyc
+index 453d2de..87a15d4 100644
+Binary files a/finetuning/__pycache__/test_prepare_data.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/test_prepare_data.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/test_student_bootstrap.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/test_student_bootstrap.cpython-312.pyc
+index 4f4b11a..d2220e6 100644
+Binary files a/finetuning/__pycache__/test_student_bootstrap.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/test_student_bootstrap.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/test_training.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/test_training.cpython-312.pyc
+index 59e7aa9..c73401c 100644
+Binary files a/finetuning/__pycache__/test_training.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/test_training.cpython-312.pyc differ
+diff --git a/data/results/c1-variants-f34-20261028/finetuning/__pycache__/test_variants.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/test_variants.cpython-312.pyc
+new file mode 100644
+index 0000000..6666e62
+Binary files /dev/null and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/test_variants.cpython-312.pyc differ
+diff --git a/finetuning/__pycache__/train_multihead.cpython-312.pyc b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/train_multihead.cpython-312.pyc
+index 3400b2b..15a5e38 100644
+Binary files a/finetuning/__pycache__/train_multihead.cpython-312.pyc and b/data/results/c1-variants-f34-20261028/finetuning/__pycache__/train_multihead.cpython-312.pyc differ
+diff --git a/finetuning/data.py b/data/results/c1-variants-f34-20261028/finetuning/data.py
+index 20ce6cd..caf6d3c 100644
+--- a/finetuning/data.py
++++ b/data/results/c1-variants-f34-20261028/finetuning/data.py
+@@ -39,7 +39,7 @@ from pathlib import Path
+ 
+ import pandas as pd
+ 
+-ROOT = Path(__file__).resolve().parents[1]
++ROOT = Path(__file__).resolve().parents[4]     # D-194 variant copy: four levels below the repository root
+ CORPUS = ROOT / "data" / "processed" / "transcripts_all.csv"
+ 
+ # The data contract, CLAUDE.md. Only these are required: they are the fields this module reads.
+diff --git a/finetuning/labels.py b/data/results/c1-variants-f34-20261028/finetuning/labels.py
+index 239badf..f25e55f 100644
+--- a/finetuning/labels.py
++++ b/data/results/c1-variants-f34-20261028/finetuning/labels.py
+@@ -51,7 +51,7 @@ from dataclasses import dataclass, field
+ from datetime import datetime, timezone
+ from pathlib import Path
+ 
+-ROOT = Path(__file__).resolve().parents[1]
++ROOT = Path(__file__).resolve().parents[4]     # D-194 variant copy: four levels below the repository root
+ for _p in (ROOT, ROOT / "coding"):
+     if str(_p) not in sys.path:
+         sys.path.insert(0, str(_p))
+diff --git a/finetuning/multihead.py b/data/results/c1-variants-f34-20261028/finetuning/multihead.py
+index 01788da..2bd10e2 100644
+--- a/finetuning/multihead.py
++++ b/data/results/c1-variants-f34-20261028/finetuning/multihead.py
+@@ -54,11 +54,17 @@ class MultiAxisClassifier(nn.Module):
+                 for a in L.AXES}
+ 
+ 
+-def example_loss(logits: dict, targets: dict, weights: dict | None = None):
++def example_loss(logits: dict, targets: dict, weights: dict | None = None, gamma: float | None = None):
+     """(summed loss over labelled axes or None, {axis: detached loss or None if masked}).
+ 
+     `weights` (train_multihead.class_weights) scales a single-select loss by the weight of the
+-    observed code, and gives each multi-select code its BCE pos_weight; None leaves the loss as is."""
++    observed code, and gives each multi-select code its BCE pos_weight; None leaves the loss as is.
++
++    `gamma` (D-194 variant V1) gives every head its focal form (Lin et al. 2017), the class weights
++    staying as the alpha terms: the single-select loss -log p of the observed code is scaled by
++    (1 - p)^gamma; each multi-select code's positive term -pos_weight * log p by (1 - p)^gamma and
++    its negative term -log(1 - p) by p^gamma, p being that code's probability, then the mean over
++    codes as before. None or 0 is exactly the loss above."""
+     terms, parts = [], {}
+     for axis in L.AXES:
+         t = targets[axis]
+@@ -67,13 +73,23 @@ def example_loss(logits: dict, targets: dict, weights: dict | None = None):
+             continue
+         z = logits[axis]
+         if axis in L.SINGLE:
+-            loss = F.cross_entropy(z.unsqueeze(0), torch.tensor([t["index"]], device=z.device))
++            if gamma:
++                logp = F.log_softmax(z, -1)[t["index"]]
++                loss = -((1 - logp.exp()) ** gamma) * logp
++            else:
++                loss = F.cross_entropy(z.unsqueeze(0), torch.tensor([t["index"]], device=z.device))
+             if weights is not None:             # one interaction: a weighted mean would cancel the weight
+                 loss = loss * weights[axis][t["index"]]
+         else:
+             y = torch.tensor(t["multi_hot"], dtype=z.dtype, device=z.device)
+             pos_weight = None if weights is None else torch.tensor(weights[axis], dtype=z.dtype, device=z.device)
+-            loss = F.binary_cross_entropy_with_logits(z, y, pos_weight=pos_weight)
++            if gamma:
++                p = torch.sigmoid(z)
++                positive = (1.0 if pos_weight is None else pos_weight) * (1 - p) ** gamma * F.logsigmoid(z)
++                negative = p ** gamma * F.logsigmoid(-z)
++                loss = -(y * positive + (1 - y) * negative).mean()
++            else:
++                loss = F.binary_cross_entropy_with_logits(z, y, pos_weight=pos_weight)
+         terms.append(loss)
+         parts[axis] = loss.detach()
+     return (torch.stack(terms).sum() if terms else None), parts
+diff --git a/finetuning/test_training.py b/data/results/c1-variants-f34-20261028/finetuning/test_training.py
+index 4e680be..b377735 100644
+--- a/finetuning/test_training.py
++++ b/data/results/c1-variants-f34-20261028/finetuning/test_training.py
+@@ -41,7 +41,7 @@ STUDENT, TOPIC, AIDEL, AIRESP = L.AXES
+ POLICY = MI.InputPolicy(max_tokens=600, context_interactions=3, prompt_cap=160, response_cap=200,
+                         min_context_fragment=64)
+ PILOT_CONFIG = Path(__file__).resolve().parent / "configs" / "pilot-20261017.json"
+-ROOT_DIR = Path(__file__).resolve().parents[1]
++ROOT_DIR = Path(__file__).resolve().parents[4]     # D-194 variant copy: four levels below the repository root
+ IDENTITY = {"id": "tiny-random-qwen3", "revision": "synthetic-test", "files_sha256": {}}
+ 
+ 
+diff --git a/data/results/c1-variants-f34-20261028/finetuning/test_variants.py b/data/results/c1-variants-f34-20261028/finetuning/test_variants.py
+new file mode 100644
+index 0000000..425800b
+--- /dev/null
++++ b/data/results/c1-variants-f34-20261028/finetuning/test_variants.py
+@@ -0,0 +1,140 @@
++"""D-194 variant checks, synthetic and CPU only (no private data, no download): V1 focal loss and V2 six context turns.
++
++    python -m unittest test_variants        (run from this folder)
++"""
++import copy
++import json
++import math
++import sys
++import tempfile
++import unittest
++from pathlib import Path
++
++sys.path.insert(0, str(Path(__file__).resolve().parent))
++import labels as L  # noqa: E402
++import model_inputs as MI  # noqa: E402
++import test_training as TT  # noqa: E402  (tiny_config, tiny_backbone, encode, example, labels, IDENTITY)
++
++try:
++    import torch
++    import multihead as M
++    import train_multihead as TM
++    HAVE_TORCH = True
++except ImportError:
++    HAVE_TORCH = False
++
++STUDENT, TOPIC, AIDEL, AIRESP = L.AXES
++FOCAL_NAMES = {"single_select": "focal_cross_entropy", "multi_select": "focal_bce_with_logits_mean_over_codes"}
++
++
++def logits_for(seed):
++    g = torch.Generator().manual_seed(seed)
++    return {a: 2 * torch.randn(len(L.DIRECT_CODES[a]), generator=g) for a in L.AXES}
++
++
++def weights_for(seed):
++    g = torch.Generator().manual_seed(seed)
++    return {a: [float(x) for x in 0.5 + 2 * torch.rand(len(L.DIRECT_CODES[a]), generator=g)] for a in L.AXES}
++
++
++@unittest.skipUnless(HAVE_TORCH, "model stack not installed")
++class FocalLoss(unittest.TestCase):
++    def setUp(self):
++        self.targets = L.encode_targets(TT.labels())
++
++    def test_a_tiny_gamma_reduces_to_the_c1_loss(self):
++        z = logits_for(1)
++        for weights in (None, weights_for(2)):
++            plain, plain_parts = M.example_loss(z, self.targets, weights)
++            focal, focal_parts = M.example_loss(z, self.targets, weights, 1e-12)
++            self.assertAlmostEqual(focal.item(), plain.item(), places=5)
++            for a in L.AXES:
++                self.assertAlmostEqual(focal_parts[a].item(), plain_parts[a].item(), places=5, msg=a)
++
++    def test_gamma_two_matches_a_hand_computation(self):
++        z, w, gamma = logits_for(3), weights_for(4), 2.0
++        _, parts = M.example_loss(z, self.targets, w, gamma)
++        for a in L.AXES:
++            t, zz = self.targets[a], [float(x) for x in z[a]]
++            if a in L.SINGLE:
++                i, top = t["index"], max(zz)
++                p = math.exp(zz[i] - top) / sum(math.exp(x - top) for x in zz)
++                expected = w[a][i] * (1 - p) ** gamma * -math.log(p)
++            else:
++                terms = []
++                for c, (x, y) in enumerate(zip(zz, t["multi_hot"])):
++                    p = 1 / (1 + math.exp(-x))
++                    terms.append(-(w[a][c] * y * (1 - p) ** gamma * math.log(p) + (1 - y) * p ** gamma * math.log(1 - p)))
++                expected = sum(terms) / len(terms)
++            self.assertAlmostEqual(parts[a].item(), expected, places=5, msg=a)
++
++    def test_a_null_label_still_contributes_nothing(self):
++        targets = L.encode_targets(TT.labels(**{AIDEL: None}))
++        total, parts = M.example_loss(logits_for(5), targets, weights_for(6), 2.0)
++        self.assertIsNone(parts[AIDEL])
++        self.assertAlmostEqual(total.item(), sum(v.item() for v in parts.values() if v is not None), places=5)
++
++    def test_the_config_names_the_focal_loss_only_with_a_positive_gamma(self):
++        cfg = TT.tiny_config()
++        TM.check_config(cfg)                                   # C1's names, no gamma
++        focal = copy.deepcopy(cfg)
++        focal["loss"].update(FOCAL_NAMES, focal_gamma=2.0)
++        TM.check_config(focal)
++        bad = []
++        for change in ({"single_select": "cross_entropy"}, {"multi_select": "bce_with_logits_mean_over_codes"},
++                       {"focal_gamma": 0}, {"focal_gamma": -1.0}, {"focal_gamma": "2"}, {"focal_gamma": float("nan")}):
++            c = copy.deepcopy(focal)
++            c["loss"].update(change)
++            bad.append(c)
++        no_gamma = copy.deepcopy(focal)
++        del no_gamma["loss"]["focal_gamma"]
++        plain_with_gamma = copy.deepcopy(cfg)
++        plain_with_gamma["loss"]["focal_gamma"] = 2.0
++        for c in bad + [no_gamma, plain_with_gamma]:
++            with self.assertRaises(ValueError, msg=json.dumps(c["loss"], default=str)):
++                TM.check_config(c)
++
++    def test_a_focal_run_trains_on_cpu_and_starts_below_the_plain_run(self):
++        examples = TM.synthetic_examples(seed=3, sizes=(5, 3, 2, 2, 1, 1, 1, 1))
++        with tempfile.TemporaryDirectory() as tmp:
++            d = Path(tmp)
++            prepared, split = TM.write_synthetic_inputs(d / "inputs", examples, 11, 3, 4)
++            data = TM.load_data(prepared, split)
++            cfg = TT.tiny_config()
++            cfg["schedule"]["epochs"] = 1
++            cfg["loss"]["class_weights"] = TM.CLASS_WEIGHT_SCHEME
++            focal = copy.deepcopy(cfg)
++            focal["loss"].update(FOCAL_NAMES, focal_gamma=2.0)
++            losses = {}
++            for name, c in (("plain", cfg), ("focal", focal)):
++                out = TM.run_training(d / name, c, data, TT.IDENTITY, TT.tiny_backbone, TT.encode, torch.device("cpu"),
++                                      synthetic=True, command=["unittest"])
++                self.assertEqual(out["outcome"], "complete")
++                progress = json.loads((TM.checkpoint_path(d / name, "final") / "progress.json").read_text())
++                losses[name] = [s["loss_mean"] for s in progress["steps"]]
++            self.assertTrue(all(math.isfinite(x) for x in losses["focal"]))
++            # same seed, initial weights, class weights and data order: every focal factor is below 1
++            self.assertLess(losses["focal"][0], losses["plain"][0])
++
++
++@unittest.skipUnless(HAVE_TORCH, "model stack not installed")
++class SixContextTurns(unittest.TestCase):
++    def test_the_input_reads_up_to_six_earlier_interactions(self):
++        ex = TT.example(seg=8, context=[(f"earlier prompt {i}", f"earlier response {i}") for i in range(7)])
++        for n in (3, 6):
++            policy = MI.InputPolicy(max_tokens=3000, context_interactions=n, prompt_cap=160, response_cap=200,
++                                    min_context_fragment=64)
++            self.assertEqual(MI.build_input(ex, TT.encode, policy)["report"]["context_included"], n)
++
++    def test_the_v2_budget_passes_the_trainer_checks_and_adds_to_the_student_side_only(self):
++        cfg = TT.tiny_config()
++        cfg["input"].update(context_interactions=6, max_tokens=10240, prompt_cap=1536, response_cap=3072)
++        TM.check_config(cfg)
++        c1 = dict(cfg["input"], context_interactions=3, max_tokens=7168)
++        budget = {k: MI.InputPolicy.from_config(v).check_with(TT.encode)["student_side_budget"]
++                  for k, v in (("v2", cfg["input"]), ("c1", c1))}
++        self.assertEqual(budget["v2"] - budget["c1"], 10240 - 7168)     # the response reservation is unchanged
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git a/finetuning/train_multihead.py b/data/results/c1-variants-f34-20261028/finetuning/train_multihead.py
+index 2ae223e..f850619 100644
+--- a/finetuning/train_multihead.py
++++ b/data/results/c1-variants-f34-20261028/finetuning/train_multihead.py
+@@ -69,7 +69,10 @@ from dataclasses import dataclass
+ from datetime import datetime, timezone
+ from pathlib import Path
+ 
+-ROOT = Path(__file__).resolve().parents[1]
++# D-194 variant copy: this folder is data/results/c1-variants-f34-20261028/finetuning/, four levels below the
++# repository root (the original finetuning/ is one level below).
++ROOT = Path(__file__).resolve().parents[4]
++CODE_DIR = Path(__file__).resolve().parent.relative_to(ROOT).as_posix()
+ # Model files come from a project-local cache, and nothing is fetched or reported during a run.
+ os.environ.setdefault("HF_HOME", str(ROOT / ".cache" / "huggingface"))
+ os.environ.setdefault("HF_HUB_OFFLINE", "1")
+@@ -91,15 +94,15 @@ CONFIG_KIND = "multihead_lora_training"
+ RUN_KIND = "multihead_training_run"
+ EXIT_INTERRUPTED = 3
+ EXIT_FAILED = 4
+-TRAINING_CODE = ("codebook_schema.json", "codebook_schema.py", "coding/direct_coding.py", "finetuning/data.py",
+-                 "finetuning/evaluation.py", "finetuning/grouped_split.py", "finetuning/labels.py",
+-                 "finetuning/model_inputs.py", "finetuning/multihead.py", "finetuning/train_multihead.py")
++# The variant copy hashes its own modules (CODE_DIR), with the shared schema and coding files.
++TRAINING_CODE = ("codebook_schema.json", "codebook_schema.py", "coding/direct_coding.py",
++                 *(f"{CODE_DIR}/{name}" for name in ("data.py", "evaluation.py", "grouped_split.py", "labels.py",
++                                                      "model_inputs.py", "multihead.py", "train_multihead.py")))
+ # Descriptive config fields must name what is implemented; anything else is refused, so a run
+ # record can never claim a setting the code did not apply.
+ IMPLEMENTED = {
+     ("optim", "name"): "AdamW",
+-    ("loss", "single_select"): "cross_entropy",
+-    ("loss", "multi_select"): "bce_with_logits_mean_over_codes",
++    # ("loss", "single_select") and ("loss", "multi_select") are LOSS_NAMES[focal?], checked in check_config
+     ("loss", "axis_weights"): "equal_sum_over_labelled_axes",
+     ("loss", "null_labels"): "axis_removed_before_loss",
+     # ("loss", "class_weights") is null or CLASS_WEIGHT_SCHEME, checked in check_config
+@@ -114,6 +117,9 @@ PACKAGES = ("torch", "transformers", "peft", "safetensors", "tokenizers", "huggi
+             "numpy", "pandas")
+ CLASS_WEIGHT_SCHEME = "training_part_balanced_v1"     # see class_weights()
+ CLASS_WEIGHT_MAX = 10.0
++# D-194 V1: the loss names without and with loss.focal_gamma (multihead.example_loss)
++LOSS_NAMES = {False: {"single_select": "cross_entropy", "multi_select": "bce_with_logits_mean_over_codes"},
++              True: {"single_select": "focal_cross_entropy", "multi_select": "focal_bce_with_logits_mean_over_codes"}}
+ statements = EV.statements          # report statements live with the evaluation module
+ 
+ 
+@@ -274,6 +280,13 @@ def check_config(cfg: dict) -> None:
+                              "(bfloat16 heads and other variants are not implemented)")
+     if cfg["loss"].get("class_weights", "<missing>") not in (None, CLASS_WEIGHT_SCHEME):
+         raise ValueError(f"loss.class_weights must be null or {CLASS_WEIGHT_SCHEME!r}: that is what this trainer implements")
++    gamma = cfg["loss"].get("focal_gamma")
++    if gamma is not None and (type(gamma) not in (int, float) or not math.isfinite(gamma) or gamma <= 0):
++        raise ValueError("loss.focal_gamma must be a positive number, or absent for the plain loss")
++    for name, value in LOSS_NAMES[gamma is not None].items():
++        if cfg["loss"].get(name, "<missing>") != value:
++            raise ValueError(f"loss.{name} must be {value!r} {'with' if gamma is not None else 'without'} loss.focal_gamma: "
++                             "that is what this trainer implements")
+     head_lr = o.get("head_lr")
+     if head_lr is not None and (type(head_lr) not in (int, float) or not math.isfinite(head_lr) or head_lr <= 0):
+         raise ValueError("optim.head_lr must be a positive number, or absent for one learning rate")
+@@ -757,6 +770,7 @@ def train_loop(run_dir: Path, cfg: dict, data: RunData, built: dict, model, opti
+     train_keys, val_keys = data.keys("train"), data.keys("validation")
+     keep = cfg["checkpoint"]["keep_last"]
+     weights = progress["plan"].get("class_weights")     # training loss only; validation loss stays unweighted
++    gamma = cfg["loss"].get("focal_gamma")              # D-194 V1: training loss only, like the weights
+     release_every = (cfg.get("memory") or {}).get("mps_empty_cache_every_steps")   # null/absent: never
+     saved = True                    # the state is the latest checkpoint's: just started or just restored
+ 
+@@ -788,8 +802,9 @@ def train_loop(run_dir: Path, cfg: dict, data: RunData, built: dict, model, opti
+                 key = L.parse_key(text)
+                 b = built[key]
+                 logits = model(torch.tensor([b["input_ids"]], device=device), b["student_pool"], b["ai_pool"])
+-                loss, parts = (M.example_loss(logits, data.targets[key]) if weights is None
+-                               else M.example_loss(logits, data.targets[key], weights))
++                # a plain config calls example_loss exactly as C1 did; only a focal config passes gamma
++                extra = (() if weights is None else (weights,)) if gamma is None else (weights, gamma)
++                loss, parts = M.example_loss(logits, data.targets[key], *extra)
+                 if loss is None:
+                     continue
+                 value = loss.item()
+diff --git a/data/results/c1-variants-f34-20261028/finetuning/variant_inputs.py b/data/results/c1-variants-f34-20261028/finetuning/variant_inputs.py
+new file mode 100644
+index 0000000..04b265a
+--- /dev/null
++++ b/data/results/c1-variants-f34-20261028/finetuning/variant_inputs.py
+@@ -0,0 +1,56 @@
++#!/usr/bin/env python3
++"""Tokenizer-only input check for the D-194 variant configs (CPU), run with this folder's modules (the variant copy).
++
++    python variant_inputs.py <out.json> <name>=<config.json> [<name>=<config.json> ...]
++
++For each config: train_multihead.check_config, the prepared data and split it names (load_data, which applies the
++trainer's split checks), the prepared context window against the policy, and the built inputs (build_inputs). Writes
++per interaction only counts (tokens, what is cut, how many earlier interactions are included) and the inputs' SHA-256;
++no token ids and no text.
++"""
++import json
++import sys
++from pathlib import Path
++
++sys.path.insert(0, str(Path(__file__).resolve().parent))
++import model_inputs as MI  # noqa: E402
++import train_multihead as T  # noqa: E402
++
++
++def main(argv) -> int:
++    out_path, result, encode = Path(argv[0]), {}, None
++    for arg in argv[1:]:
++        name, path = arg.split("=", 1)
++        cfg = json.loads(Path(path).read_text(encoding="utf-8"))
++        T.check_config(cfg)
++        if encode is None:
++            encode = T.tokenizer_encoder(T.model_snapshot(cfg["model"])[0])
++        policy = MI.InputPolicy.from_config(cfg["input"])
++        data = T.load_data(T.ROOT / cfg["data"]["prepared_dir"], T.ROOT / cfg["data"]["split_file"])
++        if data.fingerprint["split"]["validation_purpose"] != cfg["validation"]["purpose"]:      # as run_training requires
++            raise ValueError(f"{name}: the split records a different validation purpose from the config's")
++        window = data.fingerprint["prepared"].get("context_interactions")
++        if window is None or window < policy.context_interactions:
++            raise ValueError(f"{name}: prepared context window {window} < policy {policy.context_interactions}")
++        built, inputs_sha = T.build_inputs(data, encode, policy)
++        result[name] = {
++            "config": path, "inputs_sha256": inputs_sha, "prepared_context_window": window,
++            "student_side_budget": policy.check_with(encode)["student_side_budget"],
++            "parts": {p: len(data.keys(p)) for p in ("train", "validation")},
++            "per_interaction": {T.key_text(k): {"part": data.part_of[k], "tokens": b["report"]["tokens"],
++                                                "student_pool": b["student_pool"],
++                                                "prompt_tokens_omitted": b["report"]["prompt_tokens_omitted"],
++                                                "response_tokens_omitted": b["report"]["response_tokens_omitted"],
++                                                "context_tokens_omitted": b["report"]["context_tokens_omitted"],
++                                                "context_prepared": b["report"]["context_prepared"],
++                                                "context_included": b["report"]["context_included"]}
++                                for k, b in sorted(built.items())},
++            "code_sha256": {p: T.L.sha256_file(T.ROOT / p) for p in T.TRAINING_CODE}}
++    out_path.write_text(json.dumps(result, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
++    print(json.dumps({n: {"interactions": len(r["per_interaction"]), "parts": r["parts"], "window": r["prepared_context_window"],
++                          "student_side_budget": r["student_side_budget"]} for n, r in result.items()}))
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main(sys.argv[1:]))

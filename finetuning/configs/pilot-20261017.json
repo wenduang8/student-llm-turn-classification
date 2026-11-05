@@ -1,0 +1,87 @@
+{
+  "config_kind": "multihead_lora_training",
+  "status": "PROVISIONAL PILOT, 2026-10-17: engineering defaults for one conservative development run on the Mac. Not the adopted experimental protocol: model, split, input and truncation policy, loss, threshold and validation use all remain pending adoption (D-106). Rationale: docs/pilot-20261017-mac.md.",
+  "seed": 20261017,
+  "device": "mps",
+  "data": {
+    "prepared_dir": "data/training/dw150-reviewed-v1",
+    "split_file": "data/splits/dw150-reviewed-pilot-20261017.json",
+    "label_source_note": "Explicitly selected D-105 AI-assisted review of DW's 150 labels (data/labels/dw150-reviewed.jsonl): pending review; not independent coding; not joint adjudication. Report statements are derived from the prepared manifest's record kinds, not from this note."
+  },
+  "model": {
+    "id": "Qwen/Qwen3-0.6B-Base",
+    "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+    "weights_sha256": "cd2a512003e2f9f3cd3c32a9c3573f820bb28c940f73c57b1ddaa983d9223eba",
+    "license": "apache-2.0",
+    "dtype": "float32",
+    "attn_implementation": "sdpa",
+    "gradient_checkpointing": true
+  },
+  "input": {
+    "template_version": "causal-two-pool-v2",
+    "max_tokens": 6144,
+    "context_interactions": 3,
+    "prompt_cap": 1536,
+    "response_cap": 2048,
+    "min_context_fragment": 64,
+    "notes": "Student interaction type and topic read the last token of '[end of student prompt]'; the two AI axes read the final token. The response always receives a fixed reservation of response_cap plus its markers, so the student-side input (budget max_tokens minus that reservation) never depends on the current response. Labels, targets, notes, flags, review history and source records are never read."
+  },
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.0,
+    "bias": "none",
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+    "notes": "dropout 0 because torch 2.14 activation checkpointing does not replay MPS dropout masks (verified on this Mac)"
+  },
+  "heads": {
+    "dropout": 0.1,
+    "init_std": 0.02
+  },
+  "loss": {
+    "single_select": "cross_entropy",
+    "multi_select": "bce_with_logits_mean_over_codes",
+    "axis_weights": "equal_sum_over_labelled_axes",
+    "class_weights": null,
+    "null_labels": "axis_removed_before_loss",
+    "notes": "finetuning/multihead.py example_loss. ND and 'none of the four applies' are ordinary observed codes. The values above are checked against what the trainer implements."
+  },
+  "optim": {
+    "name": "AdamW",
+    "lr": 0.0002,
+    "betas": [0.9, 0.999],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "grad_clip_norm": 1.0
+  },
+  "schedule": {
+    "epochs": 4,
+    "micro_batch": 1,
+    "grad_accumulation": 8,
+    "warmup_fraction": 0.1,
+    "decay": "linear_after_warmup",
+    "notes": "one unpadded interaction per forward pass; the gradient of an optimizer step is the mean of its interactions' losses; an epoch's last group may be smaller than 8"
+  },
+  "checkpoint": {
+    "every_steps": 10,
+    "keep_last": 3
+  },
+  "validation": {
+    "purpose": "Held-out students only to (1) exercise prediction and the unified evaluation on students unseen in training and (2) record per-epoch validation loss as a descriptive over/underfitting signal. Not used to choose hyperparameters, epochs, checkpoints, thresholds, input policy or models; no repeated tuning or model comparison. The final optimizer step is evaluated once. Results are development validation against pending-review researcher labels, not final RQ3 performance and not human reliability.",
+    "per_epoch_loss": true,
+    "used_for_selection": false,
+    "evaluated_state": "final_optimizer_step"
+  },
+  "decode": {
+    "single_select": "argmax",
+    "multi_select": "threshold_else_single_highest",
+    "multi_threshold": 0.5,
+    "exclusive_negative": "labels.decode_scores",
+    "notes": "0.5 is labels.PROVISIONAL_THRESHOLD, a plumbing default, not tuned. A multi-select axis takes every code at or above it, or its single highest code if none reaches it, so it is never empty; an exclusive negative selected with positives keeps whichever side has the higher top score."
+  },
+  "synthetic": {
+    "seed": 7,
+    "validation_target": 8,
+    "validation_max": 10
+  }
+}

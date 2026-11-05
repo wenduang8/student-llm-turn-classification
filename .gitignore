@@ -1,0 +1,81 @@
+# ─── Student data — never commit, never push ──────────────────────────────
+# De-identified COMP2017 coursework held under the CARE ethics protocol.
+# Storage and access are specified in methodology §6; a push to any remote
+# would put it outside the approved arrangement.
+data/
+review1/
+
+# ─── Third-party dataset (re-downloadable) ────────────────────────────────
+# Oliveira, Keuning & Jeuring (2025) Zenodo release — companion to
+# https://doi.org/10.1145/3769994.3770000
+Dataset_2025_Koli_Paper/
+
+# ─── Machine-local settings ───────────────────────────────────────────────
+.claude/settings.local.json
+.vscode/
+.env
+.venv/
+venv/
+
+# ─── Python ───────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ─── Model and run outputs (large, regenerable) ───────────────────────────
+runs/
+checkpoints/
+outputs/
+wandb/
+*.ckpt
+*.safetensors
+*.bin
+*.pt
+
+# ─── Office lock files (docs/ is tracked, so these would otherwise show up) ─
+~$*
+
+# ─── OS noise ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Quarantine for files git could not unlink (see note in CLAUDE.md); safe to delete
+_to_delete/
+node_modules/
+package-lock.json
+
+# ─── Literature PDFs — 143 MB of published papers, not ours to redistribute ──
+# The index at docs/literature/README.md IS tracked: it carries title, year and a
+# DOI/arXiv/ACL link for every file, which is what anyone cloning the repo needs.
+# Rebuild the folder from those links, or copy it across by hand.
+docs/literature/*.pdf
+
+# ─── Backups made before an in-place edit ────────────────────────────────────
+# *.fontbak is the pre-strip copy of a .docx (docs/generators/strip_embedded_fonts.py);
+# methodology.docx.fontbak alone is 21 MB. Safe to delete once the edited file opens.
+*.bak
+# dated backups written before an in-place edit, e.g. tally_coding.py.bak-20260919.
+# `*.bak` alone does not match these, and they were turning up in the commit list.
+*.bak-*
+*.fontbak
+*.tmp
+
+# ─── Not pushed (DW, 21 Oct 2026, D-145) ─────────────────────────────────────
+# The thesis, the document archive and office/PDF outputs under docs/ stay local.
+# Markdown sources, the decision register, handoff, codebook guides and code stay tracked.
+docs/thesis/
+docs/archive/
+docs/**/*.docx
+docs/**/*.pdf
+_backup/
+
+# Untracked from 28 Oct 2026 (D-203): tmp/ holds local generation entries and previews
+# (CLAUDE.md, where files go, rule 4); .codex/ is machine-local.
+tmp/
+.codex/
+
+# ─── Training caches and logs (5 Nov 2026) ──────────────────────────────────────
+# The trainer keeps the downloaded model (about 6 GB) in .cache/.
+.cache/
+*.log

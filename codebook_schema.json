@@ -1,0 +1,84 @@
+{
+  "_comment": "The four directly coded dimensions of the coding instrument and the non-English test used to exclude conversations from coding. Read through codebook_schema.py.",
+  "non_english": {
+    "pattern": "[\\u4e00-\\u9fff\\u3400-\\u4dbf\\u3040-\\u30ff\\uac00-\\ud7af]",
+    "note": "CJK unified ideographs + extension A + kana + hangul. Used by the D-12 coding-purpose exclusion, so its scope IS the criterion: widening or narrowing it changes what is excluded. Four different patterns existed across four files before this was centralised; they agreed on the 2025 corpus only by luck."
+  },
+  "direct_instrument": {
+    "version": "direct-20260924",
+    "decision": "D-69–D-81",
+    "status": "working version for calibration; not reliability validated",
+    "fields": [
+      {
+        "name": "student interaction type",
+        "selection": "single",
+        "codes": [
+          "Providing material / responding",
+          "Information retrieval",
+          "Task automation",
+          "Guided generation"
+        ],
+        "hints": {
+          "Providing material / responding": "Supplies material or responds without making a request of their own.",
+          "Information retrieval": "Asks for existing information, a concept, a definition or a mechanism.",
+          "Task automation": "Asks the assistant to perform work without a supported student-judgement constraint.",
+          "Guided generation": "Adds a constraint based on the student's judgement to guide the work."
+        }
+      },
+      {
+        "name": "topic",
+        "selection": "multiple",
+        "codes": [
+          "code",
+          "concept",
+          "tooling or environment",
+          "conversation management"
+        ]
+      },
+      {
+        "name": "AI delegation",
+        "selection": "multiple",
+        "codes": [
+          "ND",
+          "offer",
+          "hand-back: directive",
+          "hand-back: asks the student to supply",
+          "hand-back: Socratic"
+        ]
+      },
+      {
+        "name": "AI response type",
+        "selection": "multiple",
+        "codes": [
+          "Solve-Provide",
+          "Explain",
+          "Correct-Debug",
+          "Evaluate",
+          "none of the four applies"
+        ]
+      }
+    ],
+    "negative_exclusive": {
+      "AI delegation": "ND",
+      "AI response type": "none of the four applies"
+    },
+    "metadata_flags": [
+      "needs discussion",
+      "truncated capture",
+      "Task automation default: constraint origin unclear"
+    ],
+    "note": "Human interaction type selected directly using descriptive names. Topic and both AI axes are multi-select. Historical L0–L3 names are a crosswalk, not numeric scores or new human labels. Null denotes missing/unresolved/unavailable status, not a class.",
+    "student_type_axis": "student interaction type",
+    "historical_level_names": {
+      "L0": "Providing material / responding",
+      "L1": "Information retrieval",
+      "L2": "Task automation",
+      "L3": "Guided generation"
+    },
+    "unknown_constraint_origin_default": {
+      "axis": "student interaction type",
+      "value": "Task automation",
+      "flag": "Task automation default: constraint origin unclear"
+    }
+  }
+}
